@@ -1,4 +1,5 @@
-const Order = require('./models/Order');
+const Order = require('../models/order');  // Correct path to your order model
+
 
 const createOrder = async (req, res) => {
     const { user, products, total } = req.body;
